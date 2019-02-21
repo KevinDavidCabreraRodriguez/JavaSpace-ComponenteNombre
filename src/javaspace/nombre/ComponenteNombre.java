@@ -37,6 +37,7 @@ public class ComponenteNombre extends VBox implements Initializable {
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		shieldBar.progressProperty().bind(shield);
+
 	}
 
 	public void setText(String text) {

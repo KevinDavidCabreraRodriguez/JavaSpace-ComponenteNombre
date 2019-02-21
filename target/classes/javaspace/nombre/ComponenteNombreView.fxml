@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<fx:root type="VBox" alignment="CENTER" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root alignment="CENTER" styleClass="rootPane" stylesheets="@Style.css" type="VBox" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ProgressBar fx:id="shieldBar" prefWidth="200.0" progress="0.0" VBox.vgrow="NEVER" />
-      <Label fx:id="nombreText" text="Label" />
+      <StackPane>
+         <children>
+            <ProgressBar fx:id="shieldBar" prefWidth="200.0" progress="0.0" styleClass="shieldBar" />
+            <Label text="Shield">
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin></Label>
+         </children>
+      </StackPane>
+      <Label fx:id="nombreText" styleClass="nombreText" text="Label">
+         <VBox.margin>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding></Label>
    </children>
 </fx:root>
